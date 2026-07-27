@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Understanding DPF & DEF System Fault Codes: On-Site Mobile Regeneration | Onecall Roadside Repair</title>
+<meta name="description" content="Learn what DPF and DEF fault codes mean for your commercial truck and how on-site mobile DPF regen gets you back on Highway 400 without a shop visit.">
+<link rel="canonical" href="https://onecallroadsiderepair.com/blogs/dpf-def-fault-codes.html">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.tailwindcss.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https://api.web3forms.com; frame-src https://www.google.com; form-action 'self' https://api.web3forms.com; base-uri 'self'; object-src 'none';">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<link rel="icon" type="image/png" href="../images/favicon-256.png">
+<link rel="shortcut icon" type="image/png" href="../images/favicon-256.png">
+<link rel="apple-touch-icon" href="../images/favicon-256.png">
+<meta property="og:image" content="../images/og-image.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Onecall Roadside Repair">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Big+Shoulders+Display:wght@700;800;900&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: { ink: '#0F172A', amber: { 500: '#F59E0B' }, dispatch: { red: '#DC2626' } },
+        fontFamily: { sans: ['Inter','system-ui','sans-serif'], display: ['"Big Shoulders Display"','Inter','sans-serif'] }
+      }
+    }
+  }
+</script>
+<style>
+  html{scroll-behavior:smooth}
+  body{background:#F2F0EA;color:#0F172A;font-family:'Inter',system-ui,sans-serif}
+  .section-alt{background:#E7E2D6}
+  .card{background:#FAF8F5;border:1px solid #E5E7EB;box-shadow:0 4px 14px -6px rgba(15,23,42,.08)}
+  .card-3d{transition:transform .2s ease, box-shadow .2s ease}
+  .card-3d:hover{transform:translateY(-4px);box-shadow:0 16px 30px -10px rgba(15,23,42,.18)}
+  .nav-link.active{color:#F59E0B}
+  #mobile-nav-panel.open{display:flex}
+  .field-error{border-color:#DC2626 !important;box-shadow:0 0 0 1px #DC2626}
+  .field-hint{color:#DC2626;font-size:11px;margin-top:4px;display:none}
+  .field-hint.show{display:block}
+  .accordion-content{max-height:0;overflow:hidden;transition:max-height .3s ease}
+  .accordion-item.open .accordion-content{max-height:600px}
+  .accordion-item.open .accordion-chevron{transform:rotate(180deg)}
+  .accordion-chevron{transition:transform .2s ease}
+  ::-webkit-scrollbar{width:10px}
+  ::-webkit-scrollbar-track{background:#F2F0EA}
+  ::-webkit-scrollbar-thumb{background:#CBD5E1;border-radius:6px}
+</style>
+<meta property="og:title" content="Understanding DPF & DEF System Fault Codes: On-Site Mobile Regeneration | Onecall Roadside Repair">
+<meta property="og:description" content="Learn what DPF and DEF fault codes mean for your commercial truck and how on-site mobile DPF regen gets you back on Highway 400 without a shop visit.">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": [
+    "AutomotiveRepair",
+    "EmergencyService"
+  ],
+  "name": "Onecall Roadside Repair",
+  "alternateName": "Onecall Roadside Repair",
+  "slogan": "We Keep You Moving. Anytime. Anywhere.",
+  "description": "24/7 mobile mechanical and structural repair for heavy-duty semi-trucks, commercial trailers, and fleets across the Greater Toronto Area, Clarington, and Ontario's 401, 400, QEW, and 407 corridors.",
+  "url": "https://onecallroadsiderepair.com/blogs/dpf-def-fault-codes.html",
+  "telephone": "+12899437205",
+  "image": "https://onecallroadsiderepair.com/images/og-image.png",
+  "logo": "https://onecallroadsiderepair.com/images/logo.png",
+  "priceRange": "$$",
+  "areaServed": [
+    {
+      "@type": "City",
+      "name": "Clarington"
+    },
+    {
+      "@type": "AdministrativeArea",
+      "name": "Greater Toronto Area"
+    },
+    {
+      "@type": "AdministrativeArea",
+      "name": "Ontario"
+    }
+  ],
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday",
+      "Sunday"
+    ],
+    "opens": "00:00",
+    "closes": "23:59"
+  },
+  "sameAs": [
+    "https://www.truckdown.com/search/view-detail/onecall_roadside_repair_clarington_on/6a373a81de105d476b13e987",
+    "https://www.instagram.com/onecall_roadside_repair/?hl=en"
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Understanding DPF & DEF System Fault Codes: On-Site Mobile Regeneration",
+  "description": "Learn what DPF and DEF fault codes mean for your commercial truck and how on-site mobile DPF regen gets you back on Highway 400 without a shop visit.",
+  "author": {
+    "@type": "Organization",
+    "name": "Onecall Roadside Repair"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Onecall Roadside Repair",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://onecallroadsiderepair.com/images/logo.png"
+    }
+  },
+  "mainEntityOfPage": "https://onecallroadsiderepair.com/blogs/dpf-def-fault-codes.html"
+}
+</script>
+</head>
+<body class="bg-[#F2F0EA] text-ink antialiased">
+
+<header class="sticky top-0 z-50 bg-[#F2F0EA]/95 backdrop-blur border-b border-[#D9D4C8]">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 py-3 flex items-center justify-between gap-4">
+    <a href="../index.html" class="flex items-center gap-3 shrink-0 min-w-0 pr-10">
+      <img src="../images/logo.png" alt="Onecall Roadside Repair Logo" class="h-24 w-auto shrink-0">
+    </a>
+    <nav class="hidden lg:flex items-center gap-6">
+      <a href="../index.html" data-nav-key="home" class="nav-link text-sm font-medium text-slate-700 hover:text-amber-600 transition">Home</a>
+      <a href="../services.html" data-nav-key="services" class="nav-link text-sm font-medium text-slate-700 hover:text-amber-600 transition">Services</a>
+      <a href="../coverage.html" data-nav-key="coverage" class="nav-link text-sm font-medium text-slate-700 hover:text-amber-600 transition">Coverage</a>
+      <a href="../fleet.html" data-nav-key="fleet" class="nav-link text-sm font-medium text-slate-700 hover:text-amber-600 transition">Fleet Accounts</a>
+      <a href="../about.html" data-nav-key="about" class="nav-link text-sm font-medium text-slate-700 hover:text-amber-600 transition">About</a>
+      <a href="../careers.html" data-nav-key="careers" class="nav-link text-sm font-medium text-slate-700 hover:text-amber-600 transition">Careers</a>
+      <a href="../contact.html" data-nav-key="contact" class="nav-link text-sm font-medium text-slate-700 hover:text-amber-600 transition">Contact</a>
+      
+    <div class="relative group" id="more-guides-wrap">
+      <button id="more-guides-btn" type="button" aria-haspopup="true" aria-expanded="false" class="nav-link inline-flex items-center gap-1 text-sm font-medium text-slate-700 hover:text-amber-600 transition">
+        More Guides / Driver Hub
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+      </button>
+      <div id="more-guides-panel" class="hidden absolute left-1/2 -translate-x-1/2 mt-2 w-[92vw] max-w-3xl bg-[#F2F0EA] border border-[#D9D4C8] rounded-xl shadow-xl p-4 z-50 max-h-[70vh] overflow-y-auto">
+        <div class="flex items-center justify-between mb-2 px-2">
+          <span class="text-xs font-bold uppercase tracking-widest text-slate-400">All 30 Driver &amp; Fleet Guides</span>
+          <a href="../blogs.html" class="text-xs font-bold text-amber-600 hover:underline">View All Guides →</a>
+        </div>
+        <div class="grid sm:grid-cols-2 gap-1">
+          <a href="../blogs/highway-401-breakdown-hotspots.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-amber-50 hover:text-amber-700 rounded-md transition">Top 5 Highway 401 Breakdown Hotspots: 45-Min Mobile Response</a>
+<a href="../blogs/cold-weather-diesel-survival.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-amber-50 hover:text-amber-700 rounded-md transition">Cold Weather Diesel Survival: Preventing Fuel Gelling on Ontario Highways</a>
+<a href="../blogs/dpf-def-fault-codes.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-amber-50 hover:text-amber-700 rounded-md transition">Understanding DPF & DEF System Fault Codes: On-Site Mobile Regeneration</a>
+<a href="../blogs/trailer-brake-lockups-qew.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-amber-50 hover:text-amber-700 rounded-md transition">Commercial Trailer Brake Lockups on the QEW: Roadside Release Techniques</a>
+<a href="../blogs/dot-yard-inspection-checklist.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-amber-50 hover:text-amber-700 rounded-md transition">Essential DOT Yard Inspection Checklist: Avoiding Roadside Out-of-Service Orders</a>
+<a href="../blogs/reefer-temperature-alarms-407.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-amber-50 hover:text-amber-700 rounded-md transition">Reefer Temperature Alarms on Hwy 407: Emergency Refrigeration Repairs</a>
+<a href="../blogs/fleet-cards-dispatch.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-amber-50 hover:text-amber-700 rounded-md transition">How Comdata, EFS & Fleet Cards Work for Instant Roadside Dispatch</a>
+<a href="../blogs/blown-tires-hwy-400.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-amber-50 hover:text-amber-700 rounded-md transition">Blown Commercial Tires on Hwy 400: Dual Replacement Safety Protocol</a>
+<a href="../blogs/air-brake-line-leak-diagnostics.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-amber-50 hover:text-amber-700 rounded-md transition">Mobile Air Brake Line Leak Diagnostics & Gladhands Repair</a>
+<a href="../blogs/battery-jumpstarts-alternator-testing.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-amber-50 hover:text-amber-700 rounded-md transition">Commercial Battery Jumpstarts & Alternator Testing on the Shoulder</a>
+<a href="../blogs/landing-gear-failures-53-foot-trailers.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-amber-50 hover:text-amber-700 rounded-md transition">Preventing Landing Gear Failures on Loaded 53-Foot Trailers</a>
+<a href="../blogs/clutch-transmission-diagnostics.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-amber-50 hover:text-amber-700 rounded-md transition">Heavy-Duty Clutch & Transmission Diagnostic Troubleshooting</a>
+<a href="../blogs/air-dryer-cartridge-winter-protection.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-amber-50 hover:text-amber-700 rounded-md transition">Ontario Winter Driving: Air Dryer Cartridge & Line Anti-Freeze Protection</a>
+<a href="../blogs/mobile-mechanic-vs-towing-dealer.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-amber-50 hover:text-amber-700 rounded-md transition">Mobile Diesel Mechanic vs. Towing to Dealer: Cost & Downtime Comparison</a>
+<a href="../blogs/mto-safety-inspections-durham.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-amber-50 hover:text-amber-700 rounded-md transition">Navigating Scales & MTO Safety Inspections Across Durham Region</a>
+<a href="../blogs/suspension-airbag-replacement-roadside.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-amber-50 hover:text-amber-700 rounded-md transition">Emergency Suspension & Air Bag Replacements Roadside</a>
+<a href="../blogs/fifth-wheel-coupling-safety.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-amber-50 hover:text-amber-700 rounded-md transition">5th Wheel Coupling Safety & Latching Mechanism Repairs</a>
+<a href="../blogs/overheating-diesel-radiator-water-pump.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-amber-50 hover:text-amber-700 rounded-md transition">Overheating Diesel Engines: Radiator & Water Pump Field Fixes</a>
+<a href="../blogs/turbocharger-pressure-intake-leaks.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-amber-50 hover:text-amber-700 rounded-md transition">Turbocharger Pressure Drops & Intake Leak Troubleshooting</a>
+<a href="../blogs/trailer-electrical-tail-light-repairs.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-amber-50 hover:text-amber-700 rounded-md transition">Trailer Electrical & Tail Light Harness Short Repairs</a>
+<a href="../blogs/fleet-pm-yard-checks-brampton-mississauga.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-amber-50 hover:text-amber-700 rounded-md transition">Fleet Preventive Maintenance (PM) Yard Checks in Brampton & Mississauga</a>
+<a href="../blogs/stranded-highway-401-safety-protocol.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-amber-50 hover:text-amber-700 rounded-md transition">What To Do When Stranded on Highway 401: Driver Safety Protocol</a>
+<a href="../blogs/wheel-seal-axle-bearing-diagnostics.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-amber-50 hover:text-amber-700 rounded-md transition">Commercial Truck Wheel Seal Leaks & Axle Bearing Diagnostics</a>
+<a href="../blogs/hydraulic-hose-failures-flatbeds-dump-trucks.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-amber-50 hover:text-amber-700 rounded-md transition">Hydraulic Hose Failures on Flatbeds & Dump Trucks: Mobile Replacement</a>
+<a href="../blogs/net30-invoicing-corporate-fleets.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-amber-50 hover:text-amber-700 rounded-md transition">Direct Corporate Net-30 Invoicing for Out-of-Province Canadian Fleets</a>
+<a href="../blogs/pre-trip-safety-checks-401.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-amber-50 hover:text-amber-700 rounded-md transition">Pre-Trip Safety Checks Every Driver Should Run Before the 401</a>
+<a href="../blogs/backing-up-safely-gta-docks.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-amber-50 hover:text-amber-700 rounded-md transition">Backing a Loaded Semi-Trailer Safely at a GTA Dock or Yard</a>
+<a href="../blogs/driving-in-high-wind-qew-407.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-amber-50 hover:text-amber-700 rounded-md transition">Driving a High-Profile Trailer in High Wind on the QEW and 407</a>
+<a href="../blogs/heavy-haul-oversized-load-trailers.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-amber-50 hover:text-amber-700 rounded-md transition">Heavy Haul & Oversized Load Trailers: Types, Permits and What Breaks First</a>
+<a href="../blogs/dump-truck-vocational-maintenance.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-amber-50 hover:text-amber-700 rounded-md transition">Dump Truck & Vocational Fleet Maintenance for Ontario Construction Hauling</a>
+        </div>
+      </div>
+    </div>
+    
+    </nav>
+    <div class="flex items-center gap-2">
+      <a href="sms:+12899437205?body=Commercial%20Truck/Trailer%20breakdown%20at..." class="hidden md:inline-flex items-center gap-1 border border-amber-500 text-amber-600 hover:bg-amber-500 hover:text-white font-semibold text-xs sm:text-sm px-3 py-2 rounded-lg transition">💬 Text Dispatch Location</a>
+      <a href="tel:+12899437205" class="inline-flex items-center gap-2 bg-dispatch-red hover:bg-red-700 text-white font-bold text-xs sm:text-sm px-3 sm:px-4 py-2.5 rounded-lg shadow-md transition">
+        📞 <span class="hidden sm:inline">Call Dispatch:</span> +1 (289) 943-7205
+      </a>
+      <button id="mobile-nav-toggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-nav-panel" class="lg:hidden inline-flex items-center justify-center w-10 h-10 rounded-lg border border-slate-300 text-ink hover:bg-slate-50 transition">
+        <svg id="icon-burger" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        <svg id="icon-close" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="hidden"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+    </div>
+  </div>
+  <nav id="mobile-nav-panel" class="lg:hidden hidden flex-col border-t border-[#D9D4C8] bg-[#F2F0EA] px-4 py-3 max-h-[80vh] overflow-y-auto">
+    <a href="../index.html" class="block py-2.5 text-slate-700 hover:text-amber-600 transition font-medium">Home</a>
+    <a href="../services.html" class="block py-2.5 text-slate-700 hover:text-amber-600 transition font-medium">Services</a>
+    <a href="../coverage.html" class="block py-2.5 text-slate-700 hover:text-amber-600 transition font-medium">Coverage</a>
+    <a href="../fleet.html" class="block py-2.5 text-slate-700 hover:text-amber-600 transition font-medium">Fleet Accounts</a>
+    <a href="../about.html" class="block py-2.5 text-slate-700 hover:text-amber-600 transition font-medium">About</a>
+    <a href="../careers.html" class="block py-2.5 text-slate-700 hover:text-amber-600 transition font-medium">Careers</a>
+    <a href="../contact.html" class="block py-2.5 text-slate-700 hover:text-amber-600 transition font-medium">Contact</a>
+    <div class="border-t border-slate-200 mt-2 pt-2">
+      <a href="../blogs.html" class="block py-2 text-amber-600 font-bold text-sm">📚 More Guides / Driver Hub — View All 30</a>
+      <div class="mt-1 max-h-56 overflow-y-auto">
+        <a href="../blogs/highway-401-breakdown-hotspots.html" class="block py-1.5 text-xs text-slate-600 hover:text-amber-600">Top 5 Highway 401 Breakdown Hotspots: 45-Min Mobile Response</a><a href="../blogs/cold-weather-diesel-survival.html" class="block py-1.5 text-xs text-slate-600 hover:text-amber-600">Cold Weather Diesel Survival: Preventing Fuel Gelling on Ontario Highways</a><a href="../blogs/dpf-def-fault-codes.html" class="block py-1.5 text-xs text-slate-600 hover:text-amber-600">Understanding DPF & DEF System Fault Codes: On-Site Mobile Regeneration</a><a href="../blogs/trailer-brake-lockups-qew.html" class="block py-1.5 text-xs text-slate-600 hover:text-amber-600">Commercial Trailer Brake Lockups on the QEW: Roadside Release Techniques</a><a href="../blogs/dot-yard-inspection-checklist.html" class="block py-1.5 text-xs text-slate-600 hover:text-amber-600">Essential DOT Yard Inspection Checklist: Avoiding Roadside Out-of-Service Orders</a><a href="../blogs/reefer-temperature-alarms-407.html" class="block py-1.5 text-xs text-slate-600 hover:text-amber-600">Reefer Temperature Alarms on Hwy 407: Emergency Refrigeration Repairs</a><a href="../blogs/fleet-cards-dispatch.html" class="block py-1.5 text-xs text-slate-600 hover:text-amber-600">How Comdata, EFS & Fleet Cards Work for Instant Roadside Dispatch</a><a href="../blogs/blown-tires-hwy-400.html" class="block py-1.5 text-xs text-slate-600 hover:text-amber-600">Blown Commercial Tires on Hwy 400: Dual Replacement Safety Protocol</a><a href="../blogs/air-brake-line-leak-diagnostics.html" class="block py-1.5 text-xs text-slate-600 hover:text-amber-600">Mobile Air Brake Line Leak Diagnostics & Gladhands Repair</a><a href="../blogs/battery-jumpstarts-alternator-testing.html" class="block py-1.5 text-xs text-slate-600 hover:text-amber-600">Commercial Battery Jumpstarts & Alternator Testing on the Shoulder</a><a href="../blogs/landing-gear-failures-53-foot-trailers.html" class="block py-1.5 text-xs text-slate-600 hover:text-amber-600">Preventing Landing Gear Failures on Loaded 53-Foot Trailers</a><a href="../blogs/clutch-transmission-diagnostics.html" class="block py-1.5 text-xs text-slate-600 hover:text-amber-600">Heavy-Duty Clutch & Transmission Diagnostic Troubleshooting</a><a href="../blogs/air-dryer-cartridge-winter-protection.html" class="block py-1.5 text-xs text-slate-600 hover:text-amber-600">Ontario Winter Driving: Air Dryer Cartridge & Line Anti-Freeze Protection</a><a href="../blogs/mobile-mechanic-vs-towing-dealer.html" class="block py-1.5 text-xs text-slate-600 hover:text-amber-600">Mobile Diesel Mechanic vs. Towing to Dealer: Cost & Downtime Comparison</a><a href="../blogs/mto-safety-inspections-durham.html" class="block py-1.5 text-xs text-slate-600 hover:text-amber-600">Navigating Scales & MTO Safety Inspections Across Durham Region</a><a href="../blogs/suspension-airbag-replacement-roadside.html" class="block py-1.5 text-xs text-slate-600 hover:text-amber-600">Emergency Suspension & Air Bag Replacements Roadside</a><a href="../blogs/fifth-wheel-coupling-safety.html" class="block py-1.5 text-xs text-slate-600 hover:text-amber-600">5th Wheel Coupling Safety & Latching Mechanism Repairs</a><a href="../blogs/overheating-diesel-radiator-water-pump.html" class="block py-1.5 text-xs text-slate-600 hover:text-amber-600">Overheating Diesel Engines: Radiator & Water Pump Field Fixes</a><a href="../blogs/turbocharger-pressure-intake-leaks.html" class="block py-1.5 text-xs text-slate-600 hover:text-amber-600">Turbocharger Pressure Drops & Intake Leak Troubleshooting</a><a href="../blogs/trailer-electrical-tail-light-repairs.html" class="block py-1.5 text-xs text-slate-600 hover:text-amber-600">Trailer Electrical & Tail Light Harness Short Repairs</a><a href="../blogs/fleet-pm-yard-checks-brampton-mississauga.html" class="block py-1.5 text-xs text-slate-600 hover:text-amber-600">Fleet Preventive Maintenance (PM) Yard Checks in Brampton & Mississauga</a><a href="../blogs/stranded-highway-401-safety-protocol.html" class="block py-1.5 text-xs text-slate-600 hover:text-amber-600">What To Do When Stranded on Highway 401: Driver Safety Protocol</a><a href="../blogs/wheel-seal-axle-bearing-diagnostics.html" class="block py-1.5 text-xs text-slate-600 hover:text-amber-600">Commercial Truck Wheel Seal Leaks & Axle Bearing Diagnostics</a><a href="../blogs/hydraulic-hose-failures-flatbeds-dump-trucks.html" class="block py-1.5 text-xs text-slate-600 hover:text-amber-600">Hydraulic Hose Failures on Flatbeds & Dump Trucks: Mobile Replacement</a><a href="../blogs/net30-invoicing-corporate-fleets.html" class="block py-1.5 text-xs text-slate-600 hover:text-amber-600">Direct Corporate Net-30 Invoicing for Out-of-Province Canadian Fleets</a><a href="../blogs/pre-trip-safety-checks-401.html" class="block py-1.5 text-xs text-slate-600 hover:text-amber-600">Pre-Trip Safety Checks Every Driver Should Run Before the 401</a><a href="../blogs/backing-up-safely-gta-docks.html" class="block py-1.5 text-xs text-slate-600 hover:text-amber-600">Backing a Loaded Semi-Trailer Safely at a GTA Dock or Yard</a><a href="../blogs/driving-in-high-wind-qew-407.html" class="block py-1.5 text-xs text-slate-600 hover:text-amber-600">Driving a High-Profile Trailer in High Wind on the QEW and 407</a><a href="../blogs/heavy-haul-oversized-load-trailers.html" class="block py-1.5 text-xs text-slate-600 hover:text-amber-600">Heavy Haul & Oversized Load Trailers: Types, Permits and What Breaks First</a><a href="../blogs/dump-truck-vocational-maintenance.html" class="block py-1.5 text-xs text-slate-600 hover:text-amber-600">Dump Truck & Vocational Fleet Maintenance for Ontario Construction Hauling</a>
+      </div>
+    </div>
+  </nav>
+</header>
+
+
+<nav aria-label="Breadcrumb" class="max-w-7xl mx-auto px-4 sm:px-6 pt-4 text-xs text-slate-500"><a href="../index.html" class="hover:text-amber-600">Home</a><span class="mx-2 text-slate-300">/</span><a href="../blogs.html" class="hover:text-amber-600">More Guides</a><span class="mx-2 text-slate-300">/</span><span class="text-slate-700 font-medium">Understanding DPF & DEF System Fault Codes: On-Site Mobile Regeneration</span></nav>
+<article class="max-w-3xl mx-auto px-4 sm:px-6 pt-8 pb-16">
+  <div class="rounded-2xl overflow-hidden mb-8 card">
+    <img src="../images/real/real-obd-diagnostic.png" alt="Understanding DPF & DEF System Fault Codes: On-Site Mobile Regeneration" class="w-full h-56 sm:h-72 object-cover">
+  </div>
+  <header class="mb-8">
+    <span class="text-amber-600 text-xs font-bold uppercase tracking-widest">Driver &amp; Fleet Guide</span>
+    <h1 class="font-display font-800 text-3xl sm:text-4xl text-ink mt-2 leading-tight">Understanding DPF & DEF System Fault Codes: On-Site Mobile Regeneration</h1>
+  </header>
+  <p class="text-slate-600 leading-relaxed text-lg mb-4">Few things frustrate a fleet manager more than a truck derated to a crawl on Highway 400 because of a DPF or DEF fault code, especially when the driver has no idea what triggered it. Modern diesel aftertreatment systems are effective at cutting emissions, but they're also complex enough that a single sensor fault, a bad batch of DEF fluid, or an incomplete regeneration cycle can put a truck into limp mode within minutes.</p>
+  <h2 class="font-display font-800 text-2xl text-ink mt-10 mb-4">What DPF and DEF Systems Are Actually Doing</h2><p class="text-slate-600 leading-relaxed mb-4">The diesel particulate filter, or DPF, traps soot particles from exhaust gas and periodically burns them off in a process called regeneration, which requires sustained high exhaust temperatures. The DEF, or diesel exhaust fluid, system injects a urea solution into the exhaust stream ahead of the SCR catalyst to break down nitrogen oxides into harmless nitrogen and water vapor.</p><p class="text-slate-600 leading-relaxed mb-4">That performance restriction is where drivers feel the pain. A truck can go from full power to a 20-30 km/h derate, or even a full shutdown at the next key cycle, depending on how far the fault has progressed.</p><h2 class="font-display font-800 text-2xl text-ink mt-10 mb-4">Common Fault Codes and What They're Telling You</h2><p class="text-slate-600 leading-relaxed mb-4">The important thing to understand is that most of these codes are triggered by a failed regeneration attempt, not necessarily catastrophic filter damage. In many cases, the DPF itself is fine — it just needs a properly completed regen cycle under the right conditions to clear the soot loading and reset the fault.</p><h2 class="font-display font-800 text-2xl text-ink mt-10 mb-4">How On-Site Mobile Regeneration Works</h2><p class="text-slate-600 leading-relaxed mb-4">A stationary, or parked, regeneration can often be performed roadside using diagnostic equipment that communicates directly with the truck's ECM, forcing a controlled regen cycle while the truck is stopped safely. Before running a forced regen, a technician needs to check for the underlying cause — a failed differential pressure sensor, a NOx sensor reading out of range, low DEF quality or a frozen DEF line in cold weather, or a genuinely overloaded filter.</p><h2 class="font-display font-800 text-2xl text-ink mt-10 mb-4">When Mobile Service Makes Sense vs. a Shop Visit</h2><p class="text-slate-600 leading-relaxed mb-4">Most DEF-related faults, sensor faults, and standard soot-loading regen issues can be handled on-site. The exceptions are physical DPF damage — cracked substrate, melted cores from an uncontrolled regen, or a filter so heavily loaded it needs off-vehicle cleaning — which do require shop-level equipment.</p>
+  <div class="card rounded-2xl p-6 sm:p-8 mt-12 text-center">
+    <p class="text-ink font-semibold mb-4">DPF and DEF fault codes look alarming on the dash, but the majority of them are resolvable with an on-site diagnostic and a properly forced regeneration, no shop bay required. Call <a href="tel:+12899437205" class="underline">+1 (289) 943-7205</a> for 24/7 mobile dispatch and get an accurate diagnosis before you commit to a tow.</p>
+    <div class="flex flex-wrap justify-center gap-3">
+      <a href="tel:+12899437205" class="inline-flex items-center gap-2 bg-dispatch-red hover:bg-red-700 text-white font-bold text-sm px-5 py-3 rounded-xl transition">📞 Call Dispatch: +1 (289) 943-7205</a>
+      <a href="../blogs.html" class="inline-flex items-center gap-2 bg-[#FAF8F5] border border-[#E5E7EB] hover:bg-amber-50 text-ink font-semibold text-sm px-5 py-3 rounded-xl transition">← All Guides</a>
+    </div>
+  </div>
+</article>
+
+
+<footer class="max-w-7xl mx-auto px-4 sm:px-6 mt-24 pb-32 lg:pb-16">
+  <div class="border-t border-slate-200 pt-12 grid sm:grid-cols-2 lg:grid-cols-4 gap-10">
+    <div>
+      <div class="flex items-center gap-3 mb-3">
+        <img src="../images/logo.png" alt="Onecall Roadside Repair Logo" class="h-14 w-auto">
+        <span class="text-ink font-bold">Onecall Roadside Repair</span>
+      </div>
+      <p class="text-slate-500 text-sm">24/7 mobile heavy-duty truck &amp; trailer repair across the GTA, Clarington and Ontario corridors.</p>
+    </div>
+    <div>
+      <h4 class="text-ink font-bold mb-3 text-sm uppercase tracking-wide">Navigate</h4>
+      <div class="flex flex-col gap-2 text-sm text-slate-500">
+        <a href="../services.html" class="hover:text-amber-600">Services</a>
+        <a href="../coverage.html" class="hover:text-amber-600">Coverage</a>
+        <a href="../fleet.html" class="hover:text-amber-600">Fleet Accounts</a>
+        <a href="../about.html" class="hover:text-amber-600">About</a>
+        <a href="../careers.html" class="hover:text-amber-600">Careers</a>
+        <a href="../contact.html" class="hover:text-amber-600">Contact</a>
+        <a href="../blogs.html" class="hover:text-amber-600">More Guides / Driver Hub</a>
+      </div>
+    </div>
+    <div>
+      <h4 class="text-ink font-bold mb-3 text-sm uppercase tracking-wide">Contact</h4>
+      <div class="flex flex-col gap-2 text-sm text-slate-500">
+        <a href="tel:+12899437205" class="hover:text-amber-600">📞 +1 (289) 943-7205</a>
+        <a href="sms:+12899437205" class="hover:text-amber-600">💬 Text Dispatch</a>
+        <a href="mailto:service@onecallroadsiderepair.com" class="hover:text-amber-600">✉️ service@onecallroadsiderepair.com</a>
+      </div>
+    </div>
+    <div>
+      <h4 class="text-ink font-bold mb-3 text-sm uppercase tracking-wide">Find &amp; Connect</h4>
+      <div class="flex flex-col gap-2 text-sm text-slate-500">
+        <a class="hover:text-amber-600 inline-flex items-center gap-2" href="https://www.truckdown.com/search/view-detail/onecall_roadside_repair_clarington_on/6a373a81de105d476b13e987" target="_blank" rel="noopener">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 13h11l4 4v3H3z"/><circle cx="7.5" cy="20.5" r="1.5"/><circle cx="16.5" cy="20.5" r="1.5"/><path d="M14 13V7H6v6"/></svg>
+          TruckDown Profile
+        </a>
+        <a class="hover:text-amber-600 inline-flex items-center gap-2" href="https://www.instagram.com/onecall_roadside_repair/?hl=en" target="_blank" rel="noopener">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>
+          Instagram
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="border-t border-slate-200 mt-10 pt-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
+    <p class="text-slate-400 text-xs">24/7 Mobile Heavy Truck &amp; Trailer Repair Across the GTA &amp; Ontario &mdash; Onecall Roadside Repair</p>
+    <div class="flex gap-4 text-xs text-slate-400">
+      <a href="../sitemap.xml" class="hover:text-amber-600">Sitemap</a>
+      <a href="../accessibility.html" class="hover:text-amber-600">Accessibility</a>
+      <a href="../privacy.html" class="hover:text-amber-600">Privacy Policy</a>
+    </div>
+  </div>
+</footer>
+
+<!-- Permanent Mobile Dock -->
+<div class="fixed bottom-0 left-0 right-0 z-50 lg:hidden bg-[#F2F0EA] border-t border-[#D9D4C8] flex shadow-[0_-4px_16px_rgba(0,0,0,0.08)]">
+  <a href="tel:+12899437205" class="flex-1 flex items-center justify-center gap-2 bg-dispatch-red text-white font-bold py-4 text-sm">📞 Call Dispatch</a>
+  <a href="sms:+12899437205?body=Commercial%20Truck/Trailer%20breakdown%20at..." class="flex-1 flex items-center justify-center gap-2 bg-amber-500 text-white font-bold py-4 text-sm">💬 Text Dispatch</a>
+</div>
+
+
+<script>
+(function(){
+  'use strict';
+  var navToggle = document.getElementById('mobile-nav-toggle');
+  var navPanel = document.getElementById('mobile-nav-panel');
+  var iconBurger = document.getElementById('icon-burger');
+  var iconClose = document.getElementById('icon-close');
+  function openMobileNav(){
+    navPanel.classList.add('open'); navPanel.classList.remove('hidden'); navPanel.classList.add('flex');
+    navToggle.setAttribute('aria-expanded','true'); iconBurger.classList.add('hidden'); iconClose.classList.remove('hidden');
+  }
+  function closeMobileNav(){
+    navPanel.classList.remove('open'); navPanel.classList.add('hidden'); navPanel.classList.remove('flex');
+    navToggle.setAttribute('aria-expanded','false'); iconBurger.classList.remove('hidden'); iconClose.classList.add('hidden');
+  }
+  if(navToggle){
+    navToggle.addEventListener('click', function(){
+      var isOpen = navToggle.getAttribute('aria-expanded') === 'true';
+      if(isOpen){ closeMobileNav(); } else { openMobileNav(); }
+    });
+  }
+  window.addEventListener('resize', function(){ if(window.innerWidth >= 1024){ closeMobileNav(); } });
+
+  // Desktop "More Guides" dropdown
+  var mgBtn = document.getElementById('more-guides-btn');
+  var mgPanel = document.getElementById('more-guides-panel');
+  if(mgBtn && mgPanel){
+    mgBtn.addEventListener('click', function(e){
+      e.stopPropagation();
+      var open = mgPanel.classList.contains('hidden') === false;
+      mgPanel.classList.toggle('hidden');
+      mgBtn.setAttribute('aria-expanded', String(!open));
+    });
+    document.addEventListener('click', function(e){
+      if(!mgPanel.contains(e.target) && e.target !== mgBtn){
+        mgPanel.classList.add('hidden');
+        mgBtn.setAttribute('aria-expanded','false');
+      }
+    });
+  }
+
+  // Accordion (Stranded Driver Safety Steps / FAQ)
+  document.querySelectorAll('[data-accordion-toggle]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var item = btn.closest('.accordion-item');
+      var wasOpen = item.classList.contains('open');
+      item.parentElement.querySelectorAll('.accordion-item').forEach(function(i){ i.classList.remove('open'); });
+      if(!wasOpen){ item.classList.add('open'); }
+    });
+  });
+
+  // DTC Quick Lookup selector
+  var dtcSelect = document.getElementById('dtc-select');
+  var dtcOutput = document.getElementById('dtc-output');
+  var DTC_INFO = {
+    dpf: "DPF/soot loading fault: usually resolved with an on-site forced regeneration once the underlying sensor or DEF issue is confirmed. See our DPF & DEF guide for details.",
+    abs: "ABS fault: often a wheel-speed sensor or wiring issue at one wheel end. A mobile tech can pull the code, isolate the sensor, and repair or replace it roadside.",
+    air: "Air system / low pressure fault: typically a leak at a gladhand, line, or chamber diaphragm. Roadside leak detection and repair is usually a same-visit fix.",
+    reefer: "Reefer alarm / temperature fault: check refrigerant charge, compressor clutch, and sensor wiring. Mobile reefer techs carry the tools to diagnose this on the shoulder or at the dock."
+  };
+  if(dtcSelect && dtcOutput){
+    dtcSelect.addEventListener('change', function(){
+      var val = dtcSelect.value;
+      dtcOutput.textContent = DTC_INFO[val] || 'Select a fault category above to see what it usually means and how a mobile technician would approach it.';
+    });
+  }
+
+  // Quick Emergency Dispatch form logic (index page)
+  var form = document.getElementById('quick-dispatch-form');
+  if(form){
+    var submitBtn = document.getElementById('dispatch-submit-btn');
+    var successMsg = document.getElementById('dispatch-success');
+    var fieldIds = ['dispatch-name-phone','dispatch-location','dispatch-unit','dispatch-issue'];
+    function clearFieldError(id){
+      var el = document.getElementById(id); var hint = document.querySelector('[data-hint-for="'+id+'"]');
+      el.classList.remove('field-error'); if(hint){ hint.classList.remove('show'); }
+    }
+    function setFieldError(id){
+      var el = document.getElementById(id); var hint = document.querySelector('[data-hint-for="'+id+'"]');
+      el.classList.add('field-error'); if(hint){ hint.classList.add('show'); }
+    }
+    function validateForm(){
+      var valid = true, firstInvalidEl = null;
+      fieldIds.forEach(function(id){
+        var el = document.getElementById(id); var value = el.value.trim();
+        if(!value){ setFieldError(id); valid = false; if(!firstInvalidEl){ firstInvalidEl = el; } }
+        else { clearFieldError(id); }
+      });
+      if(firstInvalidEl){ firstInvalidEl.focus(); }
+      return valid;
+    }
+    fieldIds.forEach(function(id){
+      var el = document.getElementById(id);
+      var evtName = (el.tagName === 'SELECT') ? 'change' : 'input';
+      el.addEventListener(evtName, function(){ if(el.value.trim()){ clearFieldError(id); } });
+    });
+    var errorMsg = document.getElementById('dispatch-error');
+    form.addEventListener('submit', function(e){
+      e.preventDefault();
+      successMsg.classList.add('hidden');
+      if(errorMsg){ errorMsg.classList.add('hidden'); }
+      if(!validateForm()){ return; }
+      submitBtn.disabled = true; submitBtn.textContent = 'Sending Request…';
+      var formData = new FormData(form);
+      fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: { 'Accept': 'application/json' },
+        body: formData
+      }).then(function(res){ return res.json(); }).then(function(data){
+        submitBtn.disabled = false; submitBtn.textContent = 'Send Dispatch Request';
+        if(data && data.success){
+          successMsg.classList.remove('hidden'); form.reset();
+          fieldIds.forEach(clearFieldError);
+        } else {
+          if(errorMsg){ errorMsg.classList.remove('hidden'); }
+        }
+      }).catch(function(){
+        submitBtn.disabled = false; submitBtn.textContent = 'Send Dispatch Request';
+        if(errorMsg){ errorMsg.classList.remove('hidden'); }
+      });
+    });
+  }
+
+  // Generic contact/quote forms (contact.html, fleet.html)
+  document.querySelectorAll('[data-generic-form]').forEach(function(f){
+    f.addEventListener('submit', function(e){
+      e.preventDefault();
+      var requiredFields = f.querySelectorAll('[required]');
+      var valid = true, firstInvalid = null;
+      requiredFields.forEach(function(el){
+        if(!el.value || !el.value.trim()){
+          el.classList.add('field-error'); valid = false; if(!firstInvalid){ firstInvalid = el; }
+        } else { el.classList.remove('field-error'); }
+      });
+      if(!valid){ if(firstInvalid){ firstInvalid.focus(); } return; }
+      var msg = f.querySelector('[data-form-success]');
+      var errMsg = f.querySelector('[data-form-error]');
+      if(errMsg){ errMsg.classList.add('hidden'); }
+      var btn = f.querySelector('button[type=submit]');
+      var originalText = btn.textContent;
+      btn.disabled = true; btn.textContent = 'Sending…';
+      var formData = new FormData(f);
+      fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: { 'Accept': 'application/json' },
+        body: formData
+      }).then(function(res){ return res.json(); }).then(function(data){
+        btn.disabled = false; btn.textContent = originalText;
+        if(data && data.success){
+          if(msg){ msg.classList.remove('hidden'); }
+          f.reset();
+        } else {
+          if(errMsg){ errMsg.classList.remove('hidden'); }
+        }
+      }).catch(function(){
+        btn.disabled = false; btn.textContent = originalText;
+        if(errMsg){ errMsg.classList.remove('hidden'); }
+      });
+    });
+  });
+
+  // Sticky header shadow on scroll
+  var header = document.querySelector('header');
+  if(header){
+    window.addEventListener('scroll', function(){
+      if(window.scrollY > 8){ header.classList.add('shadow-md'); } else { header.classList.remove('shadow-md'); }
+    }, { passive: true });
+  }
+})();
+</script>
+
+<!-- Back to Top -->
+<button id="back-to-top" aria-label="Back to top" class="fixed bottom-20 lg:bottom-6 right-4 sm:right-6 z-40 w-11 h-11 rounded-full bg-ink text-white shadow-lg flex items-center justify-center opacity-0 pointer-events-none translate-y-2 transition-all duration-200 hover:bg-dispatch-red focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-500">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5" aria-hidden="true"><path d="M12 19V5"/><path d="M5 12l7-7 7 7"/></svg>
+</button>
+<script>
+(function(){
+  'use strict';
+  var btn = document.getElementById('back-to-top');
+  if(!btn) return;
+  var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function toggle(){
+    if(window.scrollY > 500){
+      btn.classList.remove('opacity-0','pointer-events-none','translate-y-2');
+    } else {
+      btn.classList.add('opacity-0','pointer-events-none','translate-y-2');
+    }
+  }
+  window.addEventListener('scroll', toggle, { passive: true });
+  toggle();
+  btn.addEventListener('click', function(){
+    window.scrollTo({ top: 0, behavior: reduceMotion ? 'auto' : 'smooth' });
+  });
+})();
+</script>
+
+</body>
+</html>
